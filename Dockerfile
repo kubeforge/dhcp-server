@@ -16,5 +16,5 @@ ENTRYPOINT dnsmasq -q -d \
   --conf-file=/opt/dnsmasq.conf \
   --interface=$interface \
   --dhcp-broadcast \
-  --dhcp-range=10.8.$tenant_id.10,10.8.$tenant_id.250,255.255.255.0,10.8.$tenant_id.1,5m \
+  --dhcp-range=10.8.$tenant_id.10,10.8.$tenant_id.250,255.255.255.0,5m \
   --dhcp-option=3,10.8.$tenant_id.1
